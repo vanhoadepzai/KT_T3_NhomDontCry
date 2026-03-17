@@ -1,0 +1,160 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+/* WRAPPER */
+#tooplate_wrapper {
+    width: 960px;
+    margin: auto;
+    background: #fff;
+}
+
+/* HEADER */
+#tooplate_header {
+    background: #e8e8e8;
+    padding: 20px;
+}
+
+#site_title h1 a {
+    text-decoration: none;
+    color: green;
+}
+
+/* MENU */
+#tooplate_menu {
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tooplate_menu ul {
+    list-style: none;
+    display: flex;
+}
+
+#tooplate_menu ul li {
+    padding: 15px 20px;
+}
+
+#tooplate_menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#tooplate_menu ul li a:hover {
+    color: lime;
+}
+
+/* SEARCH BOX */
+#search_box {
+    margin-right: 20px;
+}
+
+#searchfield {
+    padding: 5px;
+}
+
+#searchbutton {
+    padding: 5px 10px;
+}
+
+/* SUBPAGE HEADER */
+#tooplate_middle_subpage {
+    background: url('/images/tooplate_middle.jpg') no-repeat center;
+    color: white;
+    padding: 40px;
+}
+
+#tooplate_middle_subpage h2 {
+    font-size: 28px;
+}
+
+/* MAIN */
+#tooplate_main {
+    padding: 20px;
+}
+
+/* BLOG LEFT */
+.col_w600 {
+    width: 65%;
+}
+
+.float_l {
+    float: left;
+}
+
+/* BLOG POST */
+.post_box {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.post_box h2 {
+    color: green;
+    margin: 10px 0;
+}
+
+.post_box img {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.post_meta {
+    font-size: 12px;
+    color: gray;
+}
+
+/* BUTTON */
+.more {
+    display: inline-block;
+    padding: 8px 15px;
+    background: limegreen;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.more:hover {
+    background: green;
+}
+
+/* RIGHT SIDEBAR */
+.col_w300 {
+    width: 30%;
+}
+
+.float_r {
+    float: right;
+}
+
+.sb_lp_box {
+    margin-bottom: 20px;
+}
+
+.sb_lp_box img {
+    width: 100%;
+}
+
+/* CLEAR FIX */
+.cleaner {
+    clear: both;
+}
+
+/* FOOTER */
+#tooplate_cr_wrapper {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
