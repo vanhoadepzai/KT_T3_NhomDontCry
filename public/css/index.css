@@ -1,0 +1,236 @@
+/* --- Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #2e7d32;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --bg-light: #f4f7f6;
+    --white: #ffffff;
+    --transition: all 0.3s ease;
+}
+
+/* --- Reset & Base --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.cleaner { clear: both; }
+
+/* --- Wrapper & Layout --- */
+#tooplate_wrapper {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- Header & Title --- */
+#tooplate_header {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#site_title h1 a {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+/* --- Navigation Menu --- */
+#tooplate_menu {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+#tooplate_menu ul {
+    list-style: none;
+    display: flex;
+}
+
+#tooplate_menu ul li a {
+    padding: 10px 20px;
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#tooplate_menu ul li a:hover, 
+#tooplate_menu ul li a.current {
+    color: var(--primary-color);
+}
+
+/* --- Search Box --- */
+#search_box {
+    display: flex;
+    background: #eee;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+#searchfield {
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 5px;
+}
+
+#searchbutton {
+    background: var(--primary-color);
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* --- Slider Section --- */
+#tooplate_middle {
+    margin-bottom: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+#slider img {
+    width: 100%;
+    display: block;
+}
+
+/* --- Content Sections (What We Do) --- */
+.col_w960 {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 10px auto;
+}
+
+/* Box container using Flexbox */
+.col_w450.float_l, .col_w450.float_r {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 48%;
+}
+
+/* Responsive fix cho cột */
+.col_w960 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wwd_box {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    transition: var(--transition);
+    border-left: 4px solid transparent;
+}
+
+.wwd_box:hover {
+    transform: translateY(-5px);
+    border-left-color: var(--primary-color);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.wwd_box img {
+    float: left;
+    margin-right: 20px;
+    width: 64px;
+}
+
+.wwd_box h3 a {
+    color: var(--secondary-color);
+    font-size: 18px;
+}
+
+/* --- Latest Projects --- */
+.lp_box {
+    width: 31%;
+    background: var(--white);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.lp_box img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.more {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background: var(--primary-color);
+    color: var(--white) !important;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.more:hover {
+    background: var(--secondary-color);
+}
+
+/* --- Footer --- */
+#tooplate_cr_wrapper {
+    background: #222;
+    color: #888;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#tooplate_cr a {
+    color: var(--primary-color);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .col_w450.float_l, .col_w450.float_r, .lp_box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #tooplate_menu {
+        flex-direction: column;
+    }
+}
